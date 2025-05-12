@@ -1,11 +1,32 @@
 <html>
+  <style>
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button, input {
+      font-size: 16px;
+      padding: 10px 10px;
+      margin: 10px 0;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input {
+      width: 50%;
+    }
+  </style>
   <body>
     <script>
       function navigate() {
         window.location.href = inp.value;
       }
     </script>
-    <input id="inp" />
-    <button onclick="navigate();">Navigate</button>
+    <div>
+      <input id="inp" />
+      <button onclick="navigate();">navigate</button>
+    </div>
   </body>
 </html>
